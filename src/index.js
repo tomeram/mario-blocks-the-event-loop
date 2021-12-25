@@ -6,6 +6,19 @@ import { posix } from 'path';
 
 const song = new Audio(theme);
 song.loop = true;
+song.volume = 0.2;
+
+function stopSong() {
+	song.pause();
+}
+
+const controls = document.createElement('div');
+controls.className = 'controls';
+const button = document.createElement('button');
+button.onclick = stopSong;
+button.textContent = 'Stop Song';
+controls.appendChild(button);
+document.body.appendChild(controls);
 
 // Create Canvas
 const canvas = document.createElement('canvas');

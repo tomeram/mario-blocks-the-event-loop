@@ -1,12 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Mario</title>
-</head>
-<body>
-	<h1>Mario Lag <input type="range" min="0" max="100" value="100" class="slider" id="volume" style="visibility: hidden"></h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>Mario</title>
+		<style>
+			* {
+				font-family: arial;
+			}
+
+			body {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+
+			h1 {
+				font-family: fantasy;
+			}
+
+			.controls {
+				margin-bottom: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>
+			Super Laggy Land
+			<input
+				type="range"
+				min="0"
+				max="100"
+				value="100"
+				class="slider"
+				id="volume"
+				style="visibility: hidden"
+			/>
+		</h1>
+	</body>
 </html>
